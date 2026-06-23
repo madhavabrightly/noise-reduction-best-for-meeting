@@ -1,0 +1,34 @@
+# Build outputs
+build/
+MicShieldDSP/build/
+out/
+cmake-build-*/
+
+# Runtime outputs
+MicShieldDSP/runtime/logs/*
+MicShieldDSP/runtime/recordings/raw/*
+MicShieldDSP/runtime/recordings/processed/*
+!MicShieldDSP/runtime/logs/.gitkeep
+!MicShieldDSP/runtime/recordings/raw/.gitkeep
+!MicShieldDSP/runtime/recordings/processed/.gitkeep
+
+# Audio/debug recordings
+*.wav
+
+# Native build artifacts
+*.obj
+*.lib
+*.pdb
+*.ilk
+*.exe
+*.dll
+*.exp
+*.tlog
+*.recipe
+
+# IDE/local files
+.vs/
+.vscode/
+*.user
+*.suo
+Desktop.ini

@@ -1,0 +1,47 @@
+{
+  "audio": {
+    "sampleRate": 48000,
+    "frameSize": 480,
+    "channels": 1,
+    "inputDeviceName": "Headset Microphone (AB17X USB Audio)",
+    "outputDeviceName": "CABLE Input",
+    "enableOutputMonitoring": true
+  },
+  "runtime": {
+    "runInBackground": true,
+    "setAsDefaultRecordingDevice": true,
+    "defaultRecordingDeviceName": "CABLE Output"
+  },
+  "dsp": {
+    "enableDcBlocker": true,
+    "enableHighPass": true,
+    "highPassHz": 80.0,
+    "enableHumNotch": true,
+    "humFrequencyHz": 50.0,
+    "enableHumHarmonics": true,
+    "enableNoiseReducer": true,
+    "noiseReductionStrength": 0.65,
+    "maxNoiseReductionDb": 22.0,
+    "enableExpander": true,
+    "gateOpenDb": -38.0,
+    "gateCloseDb": -48.0,
+    "attackMs": 5.0,
+    "releaseMs": 140.0,
+    "enableDeEsser": false,
+    "enableCompressor": false,
+    "enableLimiter": true,
+    "limiterCeilingDb": -1.0
+  },
+  "recording": {
+    "recordRaw": true,
+    "recordProcessed": true
+  },
+  "logging": {
+    "level": "info",
+    "console": true,
+    "file": true,
+    "directory": "runtime/logs",
+    "maxFileSizeMb": 10,
+    "maxFiles": 5
+  }
+}
