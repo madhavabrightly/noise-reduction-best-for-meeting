@@ -100,6 +100,17 @@ Stop it:
 .\scripts\stop_background.ps1
 ```
 
+Double-click button scripts are also available:
+
+```text
+scripts\Start_MicShieldDSP.cmd
+scripts\Pause_MicShieldDSP.cmd
+scripts\Resume_MicShieldDSP.cmd
+scripts\Stop_MicShieldDSP.cmd
+```
+
+`Start_MicShieldDSP.cmd` checks for an existing `MicShieldDSP.exe` process first, so pressing it twice will not start duplicate filters.
+
 ## Run For Normal Microphone
 
 In `config/default_config.json`, leave:
