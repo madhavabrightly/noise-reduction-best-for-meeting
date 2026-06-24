@@ -1,8 +1,11 @@
 $root = Split-Path -Parent $PSScriptRoot
-$exe = Join-Path $root "build/Release/MicShieldDSP.exe"
+$exe = Join-Path $root "bin/MicShieldDSP.exe"
+if (-not (Test-Path $exe)) {
+    $exe = Join-Path $root "build/Release/MicShieldDSP.exe"
+}
 
 if (-not (Test-Path $exe)) {
-    throw "MicShieldDSP.exe was not found. Build the Release target first."
+    throw "MicShieldDSP.exe was not found. Build the Release target first, or place it at MicShieldDSP/bin/MicShieldDSP.exe."
 }
 
 Write-Host "MicShieldDSP devices:"
